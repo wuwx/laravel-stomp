@@ -1,0 +1,29 @@
+{
+    "name": "wuwx/laravel-stomp",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Weixin WU",
+            "email": "wuweixin@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1"
+    },
+    "suggest": {
+        "ext-stomp": ""
+    },
+    "autoload": {
+        "psr-4": {
+            "Wuwx\\LaravelStomp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wuwx\\LaravelStomp\\StompServiceProvider"
+            ]
+        }
+    }
+}
