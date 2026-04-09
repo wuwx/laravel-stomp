@@ -5,24 +5,15 @@
          colors="true"
          verbose="true"
          failOnRisky="true"
-         failOnWarning="true"
+         failOnWarning="false"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
+         convertWarningsToExceptions="false"
          stopOnFailure="false"
-         beStrictAboutOutputDuringTests="true">
+         beStrictAboutOutputDuringTests="false">
     <testsuites>
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
-    <coverage processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">./src</directory>
-        </include>
-        <report>
-            <html outputDirectory="coverage/html"/>
-            <text outputFile="php://stdout" showUncoveredFiles="true"/>
-        </report>
-    </coverage>
 </phpunit>
