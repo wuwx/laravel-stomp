@@ -19,6 +19,8 @@
             "Wuwx\\LaravelStomp\\": "src/"
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
         "laravel": {
             "providers": [
